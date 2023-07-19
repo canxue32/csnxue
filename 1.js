@@ -19,7 +19,7 @@ if (typeof $response == "undefined") {
 } else if (guding6 && guding6.subscriber) {
   guding6.subscriber.subscriptions = guding6.subscriber.subscriptions || {};
   guding6.subscriber.entitlement = guding6.subscriber.entitlement || {};
-  const app = 'gd';const list = {'gd':{name: 'pro', id: 'com.vanemu.oops_expired.pro.year'}};
+  const app = 'gd';const list = {'gd':{name: 'vip', id: 'com.cajcnki.yuedu_98'}};
   const data = {
     "expires_date": "6666-06-06T06:06:06Z",
     "original_purchase_date": "2023-02-23T02:33:33Z",
