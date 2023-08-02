@@ -19,9 +19,9 @@ if (typeof $response == "undefined") {
 } else if (guding6 && guding6.subscriber) {
   guding6.subscriber.subscriptions = guding6.subscriber.subscriptions || {};
   guding6.subscriber.entitlement = guding6.subscriber.entitlement || {};
-  const app = 'gd';const list = {'gd':{name: 'pro', id:'CardPhoto_Pro_Month'}};
+  const app = 'gd';const list = {'gd':{name: 'CardPhoto pro', id:'CardPhoto_Pro_Month'}};
   const data = {
-    "grace_period_expires_date": "6666-06-06T06:06:06Z",
+    "expires_date": "6666-06-06T06:06:06Z",
     "original_purchase_date": "2023-02-23T02:33:33Z",
     "purchase_date": "2023-02-23T02:33:33Z",
     "ownership_type" : "PURCHASED",
