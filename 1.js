@@ -7,7 +7,7 @@
 ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-request-header https://raw.githubusercontent.com/canxue32/csnxue/main/1.js
 
 [MITM]
-hostname = api.revenuecat.com
+hostname = www.2bulu.com
 
 */
 const guding = {};
@@ -19,7 +19,7 @@ if (typeof $response == "undefined") {
 } else if (guding6 && guding6.subscriber) {
   guding6.subscriber.subscriptions = guding6.subscriber.subscriptions || {};
   guding6.subscriber.entitlement = guding6.subscriber.entitlement || {};
-  const app = 'gd';const list = {'gd':{name: 'pro', id:'gopro_subscription_year'}};
+  const app = 'gd';const list = {'gd':{name: 'vip', id:'12'}};
   const data = {
     "expires_date": "6666-06-06T06:06:06Z",
     "original_purchase_date": "2023-02-23T02:33:33Z",
