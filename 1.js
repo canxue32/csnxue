@@ -7,32 +7,35 @@
 ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-request-header https://raw.githubusercontent.com/canxue32/csnxue/main/1.js
 
 [MITM]
-hostname = www.2bulu.com
+hostname = api.revenuecat.com
 
 */
-const guding = {};
-const guding6 = JSON.parse(typeof $response != "undefined" && $response.body || null);
+const chxm1023 = {};
+const chxm1024 = JSON.parse(typeof $response != "undefined" && $response.body || null);
+
+const name = "premium";
+const appid = "YearlyFreeTrial";
+
+  
 if (typeof $response == "undefined") {
   delete $request.headers["x-revenuecat-etag"];
   delete $request.headers["X-RevenueCat-ETag"];
-  guding.headers = $request.headers;
-} else if (guding6 && guding6.subscriber) {
-  guding6.subscriber.subscriptions = guding6.subscriber.subscriptions || {};
-  guding6.subscriber.entitlement = guding6.subscriber.entitlement || {};
-  const app = 'gd';const list = {'gd':{name: 'premium', id:'YearlyFreeTrial'}};
-  const data = {
-    "expires_date": "6666-06-06T06:06:06Z",
-    "original_purchase_date": "2023-02-23T02:33:33Z",
-    "purchase_date": "2023-02-23T02:33:33Z",
-    "ownership_type" : "PURCHASED",
-    "store" : "app_store"};
-for (const i in list) { if (new RegExp(`^${i}`, `i`).test(app)) {
-guding6.subscriber.subscriptions[list[i].id] = data;
-guding6.subscriber.entitlements[list[i].name] = JSON.parse(JSON.stringify(data));
-guding6.subscriber.entitlements[list[i].name].product_identifier = list[i].id;
-                break;
-          }
-    }
-    guding.body = JSON.stringify(guding6);
+  chxm1023.headers = $request.headers;
+} else if (chxm1024 && chxm1024.subscriber) {
+  data = {
+ "Author": "chxm1023",
+ "Telegram" : "https://t.me/chxm1023",
+ "warning": "仅供学习，禁止转载或售卖",
+ "original_purchase_date": "2022-09-09T09:09:09Z",
+ "purchase_date": "2022-09-09T09:09:09Z",
+ "expires_date": "2099-09-09T09:09:09Z",
+ "store" : "app_store",
+ "ownership_type": "PURCHASED"
+ };
+  chxm1024.subscriber.subscriptions[(appid)] = data
+  chxm1024.subscriber.entitlements[(name)] = JSON.parse(JSON.stringify(data));
+  chxm1024.subscriber.entitlements[(name)].product_identifier = (appid);
+  chxm1023.body = JSON.stringify(chxm1024);
 }
-$done(guding);
+
+$done(chxm1023);
