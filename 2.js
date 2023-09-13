@@ -1,6 +1,6 @@
 /*************************************
 
-项目名称：英语听力播放器
+项目名称：Lister
 下载地址：https://t.cn/A6OJJfW5
 脚本作者：chxm1023
 电报频道：https://t.me/chxm1023
@@ -9,79 +9,91 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/canxue32/csnxue/main/2.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes/Lister.js
 
 [mitm]
 hostname = buy.itunes.apple.com
 
 *************************************/
-{
-  "environment" : "Production",
+
+
+var chxm1023 = JSON.parse($response.body);
+
+chxm1023 = {
+  "status" : 0,
   "receipt" : {
     "receipt_type" : "Production",
-    "receipt_creation_date" : "2023-08-12 09:09:09 Etc/GMT",
+    "app_item_id" : 6451389254,
+    "receipt_creation_date" : "2023-06-06 16:06:26 Etc/GMT",
+    "bundle_id" : "com.productlab.lister",
+    "original_purchase_date" : "2023-06-06 16:00:00 Etc/GMT",
     "in_app" : [
       {
         "quantity" : "1",
         "purchase_date_ms" : "1691802549000",
-        "expires_date" : "2099-12-31 09:09:09 Etc/GMT",
-        "expires_date_pst" : "2099-12-31 09:09:09 America/Los_Angeles",
+        "expires_date" : "2099-09-09 09:09:09 Etc/GMT",
+        "expires_date_pst" : "2099-09-09 06:06:06 America/Los_Angeles",
         "is_in_intro_offer_period" : "false",
-        "transaction_id" : "99999999999999",
+        "transaction_id" : "490001314520000",
         "is_trial_period" : "false",
-        "original_transaction_id" : "99999999999999",
-        "purchase_date" : "2023-08-12 09:09:09 Etc/GMT",
+        "original_transaction_id" : "490001314520000",
+        "purchase_date" : "2023-06-06 16:06:06 Etc/GMT",
         "product_id" : "kipa_kilonotes_quarter_subscription",
-        "original_purchase_date_pst" : "2023-08-12 09:09:09 America/Los_Angeles",
+        "original_purchase_date_pst" : "2023-06-06 06:06:07 America/Los_Angeles",
         "in_app_ownership_type" : "PURCHASED",
-        "original_purchase_date_ms" : "1691802549000",
-        "web_order_line_item_id" : "99999999999999",
-        "expires_date_ms" : "4102362549000",
-        "purchase_date_pst" : "2023-08-12 09:09:09 America/Los_Angeles",
-        "original_purchase_date" : "2023-08-12 09:09:09 Etc/GMT"
+        "original_purchase_date_ms" : "1686065613000",
+        "web_order_line_item_id" : "490000123456789",
+        "expires_date_ms" : "4092599349000",
+        "purchase_date_pst" : "2023-06-06 06:06:06 America/Los_Angeles",
+        "original_purchase_date" : "2023-06-06 16:06:07 Etc/GMT"
       }
     ],
-    "bundle_id" : "com.topstack.iphone.Kilonotes",
-    "receipt_creation_date_pst" : "2023-08-12 09:09:09 America/Los_Angeles",
-    "request_date" : "2023-08-12 09:09:09 Etc/GMT",
-    "request_date_pst" : "2023-08-12 09:09:09 America/Los_Angeles",
-    "original_purchase_date_pst" : "2023-08-12 09:09:09 America/Los_Angeles",
+    "adam_id" : 6451389254,
+    "receipt_creation_date_pst" : "2023-06-06 06:06:26 wAmerica/Los_Angeles",
+    "request_date" : "2023-06-06 16:06:27 Etc/GMT",
+    "request_date_pst" : "2023-06-06 06:06:27 America/Los_Angeles",
+    "version_external_identifier" : 859031437,
     "request_date_ms" : "1691802549000",
+    "original_purchase_date_pst" : "2023-06-06 06:00:00 America/Los_Angeles",
     "application_version" : "110",
     "original_purchase_date_ms" : "1691802549000",
     "receipt_creation_date_ms" : "1691802549000",
-    "original_application_version" : "123",
-    "original_purchase_date" : "2023-08-12 09:09:09 Etc/GMT"
+    "original_application_version" : "1.0.1.1",
+    "download_id" : 502764712440381600
   },
-  "status" : 0,
   "latest_receipt_info" : [
     {
       "quantity" : "1",
       "purchase_date_ms" : "1691802549000",
-      "expires_date" : "2099-12-31 09:09:09 Etc/GMT",
-      "expires_date_pst" : "2099-12-31 09:09:09 America/Los_Angeles",
+      "expires_date" : "2099-09-09 09:09:09 Etc/GMT",
+      "expires_date_pst" : "2099-09-09 06:06:06 America/Los_Angeles",
       "is_in_intro_offer_period" : "false",
-      "transaction_id" : "99999999999999",
+      "transaction_id" : "490001314520000",
       "is_trial_period" : "false",
-      "original_transaction_id" : "99999999999999",
-      "purchase_date" : "2023-08-12 09:09:09 Etc/GMT",
+      "original_transaction_id" : "490001314520000",
+      "purchase_date" : "2023-06-06 16:06:06 Etc/GMT",
       "product_id" : "kipa_kilonotes_quarter_subscription",
-      "original_purchase_date_pst" : "2023-08-12 09:09:09 America/Los_Angeles",
+      "original_purchase_date_pst" : "2023-06-06 06:06:07 America/Los_Angeles",
       "in_app_ownership_type" : "PURCHASED",
-      "subscription_group_identifier" : "66666666",
-      "original_purchase_date_ms" : "1691802549000",
-      "web_order_line_item_id" : "99999999999999",
-      "expires_date_ms" : "4102362549000",
-      "purchase_date_pst" : "2023-08-12 09:09:09 America/Los_Angeles",
-      "original_purchase_date" : "2023-08-12 09:09:09 Etc/GMT"
+      "original_purchase_date_ms" : "1686065613000",
+      "web_order_line_item_id" : "490000123456789",
+      "expires_date_ms" : "4092599349000",
+      "purchase_date_pst" : "2023-06-06 06:06:06 America/Los_Angeles",
+      "original_purchase_date" : "2023-06-06 16:06:07 Etc/GMT"
     }
   ],
+  "latest_receipt" : "chxm1023",
+  "environment" : "Production",
   "pending_renewal_info" : [
     {
       "product_id" : "kipa_kilonotes_quarter_subscription",
-      "original_transaction_id" : "99999999999999",
+      "original_transaction_id" : "490001314520000",
       "auto_renew_product_id" : "kipa_kilonotes_quarter_subscription",
       "auto_renew_status" : "1"
     }
-  ]
-}
+  ],
+  "warning" : "仅供学习，禁止转载或售卖",
+  "Telegram" : "https://t.me/chxm1023"
+};
+
+$done({body : JSON.stringify(chxm1023)});
