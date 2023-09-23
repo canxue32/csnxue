@@ -13,8 +13,8 @@ hostname = api.revenuecat.com
 const chxm1023 = {};
 const chxm1024 = JSON.parse(typeof $response != "undefined" && $response.body || null);
 
-const name = "vip";
-const appid = "com.xichywy.guoshi.vip_50year_198_single";
+const name = "premium";
+const appid = "radioapp.lifetime";
 
   
 if (typeof $response == "undefined") {
