@@ -14,7 +14,7 @@ const chxm1023 = {};
 const chxm1024 = JSON.parse(typeof $response != "undefined" && $response.body || null);
 
 const name = "Premium";
-const appid = "radioapp.lifetime";
+const appid = "1.year.withoutTrial";
 
   
 if (typeof $response == "undefined") {
