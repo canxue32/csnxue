@@ -12,8 +12,8 @@ hostname = api.revenuecat.com
 */
 const chxm1023 = {};
 const chxm1024 = JSON.parse(typeof $response != "undefined" && $response.body || null);
-const name = "pro";
-const appid = "soma_t_yearly";
+const name = "premium";
+const appid = "com.advasoft.batched.premium_year_3days_trial_60usd";
 
   
 if (typeof $response == "undefined") {
